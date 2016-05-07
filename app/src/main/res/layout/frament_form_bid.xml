@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:background="#99cdc9c9"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="报价"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="￥"
+            android:textColor="#ec407a"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:textColor="#ec407a"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:background="#99cdc9c9">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="留言"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:textSize="24sp"
+            android:maxLines="3"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        >
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_btn_rnd_middle_red"
+            android:layout_centerInParent="true"
+            android:text="!!拍"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

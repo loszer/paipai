@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/wp_username"
+        android:layout_width="match_parent"
+        android:layout_marginTop="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        >
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:hint="手机号:"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wp_passwd"
+        android:layout_below="@+id/wp_username"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:hint="密码:"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wp_submit"
+        android:layout_below="@+id/wp_passwd"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_btn_rnd_middle_blue"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥199"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:background="#e15b64"
+        android:padding="4dp"
+        />
+</merge>

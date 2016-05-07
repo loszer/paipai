@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#cdc9c9">
+
+    <!--在没有数据或者数据还没加载完的时候，需要一个遮罩层，或者良好设计
+        的被背景-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:background="#e15b64"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_vertical"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="#cdc9c9"
+            android:weightSum="1"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/wp_info_ex"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/anchor01"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="I like the thing!!!"
+                    android:textSize="20sp"
+                    android:padding="8dp"
+                    android:textColor="#f5f5dc"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/anchor01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true">
+
+                <include
+                    layout="@layout/unit_price"
+                    />
+
+            </LinearLayout>
+
+            <!--<TextView
+               gnParentBottom="true"
+                android:la android:id="@+id/tv_price"
+                android:layout_alignParentRight="true"
+                android:layout_aliyout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥199"
+                android:textSize="24sp"
+                android:textColor="#ffffff"
+                android:background="#e15b64"
+                android:padding="4dp"
+                 />-->
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/wp_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/iv_avator"
+                android:layout_alignParentLeft="true"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_avator_48dp"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_avator"
+                android:layout_marginLeft="4dp"
+                android:text="nick nick"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="4dp"
+                android:background="#ec407a"
+                android:layout_centerVertical="true"
+                android:text="VIP"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:padding="2dp"/>
+
+            <!--<ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="4dp"
+                android:background="#ec407a"
+                android:layout_centerVertical="true"/>-->
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="4dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/iv_avator_b"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_avator_48dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最高报价"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥99"
+                android:textSize="18sp"
+
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="#ec407a"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_centerInParent="true"
+            android:layout_margin="4dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="128dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_btn_rnd_middle_red"
+                android:layout_gravity="center"
+                android:text="拍一拍"
+                android:textSize="24sp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="#ec407a"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
